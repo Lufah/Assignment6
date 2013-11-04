@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="assignment6.css" type="text/css" rel="stylesheet" />
+	 	<link rel="stylesheet"
+	 	href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="assignment6.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<!--Draggable/droppable list-->
+		<h2>Sort Me According to Favorite Animal!</h2>
+		<div id="list">
+			<ul id="sortMe">
+				<li class="sortableList">Cats</li>
+				<li class="sortableList">Chicken</li>
+				<li class="sortableList">Dragons</li>
+				<li class="sortableList">Ponies</li>
+				<li class="sortableList">Squash</li>
+			</ul>
+		</div>
+		<!--Horizontal accordion-->
+		<h2>Facts!</h2>
+		<div id="accordion">
+			<h3>Cats</h3>
+			<div class="reveal">
+				The domestic cat[1][2] (Felis catus[2] or Felis silvestris catus[4]) is a small, usually furry, domesticated, and carnivorous mammal. It is often called the housecat when kept as an indoor pet,[6] or simply the cat when there is no need to distinguish it from other felids and felines. Cats are often valued by humans for companionship and their ability to hunt vermin and household pests.<br />
+				<a href="http://en.wikipedia.org/wiki/Cat">More about cats...</a>
+			</div>
+			<h3>Chicken</h3>
+			<div class="reveal">
+				The chicken (Gallus gallus domesticus) is a domesticated fowl, a subspecies of the Red Junglefowl. As one of the most common and widespread domestic animals with a population of more than 24 billion in 2003,[1] there are more chickens in the world than any other species of bird. Humans keep chickens primarily as a source of food, consuming both their meat and their eggs.<br />
+				<a href="http://en.wikipedia.org/wiki/Chicken">More about chickens...</a>
+			</div>
+			<h3>Dragons</h3>
+			<div class="reveal">
+				A dragon is a legendary creature, typically with serpentine or reptilian traits, that features in the myths of many cultures. There are two distinct cultural traditions of dragons: the European dragon, derived from European folk traditions and ultimately related to Greek and Middle Eastern mythologies, and the Chinese dragon, with counterparts in Japan, Korea and other East Asian countries.[1]<br />
+				<a href="http://en.wikipedia.org/wiki/Dragon">More about dragons...</a>
+			</div>
+			<h3>Ponies</h3>
+			<div class="reveal">
+				A pony is a small horse[1][2][3] (Equus ferus caballus). Depending on context, a pony may be a horse that is under an approximate or exact height at the withers, or a small horse with a specific conformation and temperament. There are many different breeds. Compared to other horses, ponies often exhibit thicker manes, tails and overall coat, as well as proportionally shorter legs, wider barrels, heavier bone, thicker necks, and shorter heads with broader foreheads. The word "pony" derives from the old French poulenet, meaning foal, a young, immature horse, but this is not the modern meaning; unlike a horse foal, a pony remains small when fully grown. However, on occasion, people who are unfamiliar with horses may confuse an adult pony with a foal.<br />
+				<a href="http://en.wikipedia.org/wiki/Pony">More about ponies...</a>
+			</div>
+			<h3>Squash</h3>
+			<div class="reveal">
+				Cucurbita (Latin for gourd)[1] is a genus in the gourd family Cucurbitaceae native to and originally cultivated in the Andes and Mesoamerica. Some Cucurbita species were brought to Europe after the discovery of America and are now used in many parts of the world. The plants (referred to as squash or pumpkin, depending on variety and local parlance), are grown for their edible fruits and seeds. There are five domesticated species: Cucurbita argyrosperma, C. ficifolia, C. maxima, C. moschata, and C. pepo. C. pepo includes varieties of both winter squash and summer squash, and C. moschata may be used as winter squash because the full-grown fruits can be stored for months.<br />
+				<a href="http://en.wikipedia.org/wiki/Squash_(plant)">More about squash...</a>				
+			</div>
+		</div>
+		<!--Event-based animation 1-->
+		<h2>See Photos!</h2>
+		<div id="animation1">
+			<select name="allAnimals" id="pics">
+				<option value="cat">Cat</option>
+				<option value="chicken">Chicken</option>
+				<option value="dragon">Dragon</option>
+				<option value="pony">Pony</option>
+				<option value="squash">Squash</option>
+			</select>
+			<button id="getAnimal">Show Photo</button>
+			<div id="allPics">
+				<img id="cat" src="cat.jpg" alt="wide-eyed cat" />
+				<img id="chicken" src="chicken.jpg" alt="happy chicken" />
+				<img id="dragon" src="dragon.jpg" alt="sarth" />
+				<img id="pony" src="pony.jpg" alt="fluttershy" />
+				<img id="squash" src="squash.jpg" alt="kabocha" />
+			</div>
+		</div>
+		<!--Event-based animation 2-->
+		<h2>Click Me!</h2>
+		<div id="animation2">
+			<div id="color"></div>
+		</div>
+		<!--Progress bar-->
+		<div id="progress">
+		</div> 
+	</body>
+</html>

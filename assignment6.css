@@ -1,0 +1,33 @@
+#sortMe {
+	text-align: center;
+	list-style: none;
+}
+
+#sortMe li {
+	border: 1px solid black;
+	width: 200px;
+	padding: 3px;
+}
+
+#accordion { 
+	width: 525px;
+}
+.reveal {
+	font-style: italic;
+}
+
+#allPics img {
+	position: absolute;
+	width: 425px;
+	height: auto;
+}
+
+#color {
+	background-color: #B0B0B0;
+	width: 425px;
+	height: 150px;
+}
+
+#progress { 
+	width: 425px;
+}
